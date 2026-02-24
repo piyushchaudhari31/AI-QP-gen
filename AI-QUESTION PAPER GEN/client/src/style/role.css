@@ -1,0 +1,193 @@
+.rq-section {
+  padding: 50px 160px;
+  text-align: center;
+  height: 90vh;
+}
+
+.rq-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: black;
+}
+
+.rq-subtitle {
+  margin-top: 10px;
+  font-size: 16px;
+  color: black;
+}
+
+.rq-wrapper {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.rq-card {
+  background: white;
+  border-radius: 18px;
+  padding: 40px 30px;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+
+.rq-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.rq-purple {
+  background: linear-gradient(135deg,#a855f7,#7c3aed);
+}
+
+.rq-blue {
+  background: linear-gradient(135deg,#3b82f6,#0ea5e9);
+}
+
+.rq-green {
+  background: linear-gradient(135deg,#10b981,#14b8a6);
+}
+
+.rq-card h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.rq-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.rq-list li {
+  margin-bottom: 12px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.rq-list li::before {
+  content: "●";
+  position: absolute;
+  left: 0;
+  font-size: 10px;
+}
+/* 
+.rq-list.rq-purple li::before { color:#a855f7; }
+.rq-list.rq-blue li::before { color:#38bdf8; }
+.rq-list.rq-green li::before { color:#34d399; } */
+
+.rq-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.rq-btn.rq-purple {
+  background: linear-gradient(90deg,#a855f7,#7c3aed);
+}
+
+.rq-btn.rq-blue {
+  background: linear-gradient(90deg,#3b82f6,#0ea5e9);
+}
+
+.rq-btn.rq-green {
+  background: linear-gradient(90deg,#10b981,#14b8a6);
+}
+
+.rq-btn:hover {
+  opacity: .95;
+}
+
+/* =========================
+   1200px
+========================= */
+@media (max-width: 1200px) {
+  .rq-section {
+    padding: 50px 80px;
+  }
+}
+
+
+/* =========================
+   900px (Tablet)
+========================= */
+@media (max-width: 900px) {
+  .rq-section {
+    padding: 40px 40px;
+    height: auto;
+  }
+
+  .rq-title {
+    font-size: 34px;
+  }
+
+  .rq-wrapper {
+    gap: 30px;
+    margin-top: 50px;
+  }
+
+  .rq-card {
+    padding: 30px 24px;
+  }
+}
+
+
+/* =========================
+   600px (Mobile)
+========================= */
+@media (max-width: 600px) {
+  .rq-section {
+    padding: 40px 20px;
+  }
+
+  .rq-title {
+    font-size: 28px;
+  }
+
+  .rq-subtitle {
+    font-size: 14px;
+  }
+
+  .rq-wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 40px;
+  }
+
+  .rq-card {
+    padding: 26px 20px;
+  }
+
+  .rq-card h3 {
+    font-size: 20px;
+  }
+
+  .rq-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   400px (Small phones)
+========================= */
+@media (max-width: 400px) {
+  .rq-title {
+    font-size: 24px;
+  }
+
+  .rq-card {
+    padding: 22px 16px;
+  }
+}

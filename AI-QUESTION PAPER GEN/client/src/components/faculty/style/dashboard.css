@@ -1,0 +1,98 @@
+.dashboard {
+  flex: 1;
+  padding: 30px;
+  color: #000;
+  min-height: 100vh;
+}
+
+/* HEADER */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.dashboard p {
+  margin-top: 6px;
+  opacity: 0.85;
+}
+
+/* STATS CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 26px;
+  border-radius: 18px;
+  font-size: 30px;
+  font-weight: 600;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card span {
+  display: block;
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 6px;
+}
+
+/* 🔽 BOTTOM SECTION */
+.bottom-section {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Generate Paper */
+.generate-card {
+  background: linear-gradient(135deg, #8787eb, #693e94);
+  padding: 28px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.generate-card h2 {
+  font-size: 22px;
+  color: white;
+}
+
+.generate-card p {
+  font-size: 14px;
+  opacity: 0.9;
+  color: white;
+}
+
+/* Add Question */
+.add-question-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 26px;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.add-question-card h2 {
+  font-size: 22px;
+}
+
+.add-question-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}

@@ -1,0 +1,239 @@
+*{
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+/* CONTAINER */
+
+.exam-container{
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  background:#f3f4f6;
+}
+
+/* HEADER */
+
+.exam-header{
+  position:sticky;
+  top:0;
+  background:white;
+  padding:18px 20px;
+  border-bottom:2px solid #e5e7eb;
+  z-index:20;
+}
+
+.exam-header h2{
+  text-align:center;
+  margin:0;
+  font-size:22px;
+}
+
+.exam-header p{
+  text-align:center;
+  margin-top:6px;
+  color:#666;
+  font-size:14px;
+}
+
+/* BODY */
+
+.exam-body{
+  flex:1;
+  overflow-y:auto;
+  padding:30px 80px;
+}
+
+/* QUESTION */
+
+.question-box{
+  background:white;
+  border:1px solid #e5e7eb;
+  padding:18px 22px;
+  border-radius:10px;
+  margin-bottom:20px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.question-box h4{
+  margin-bottom:12px;
+  font-size:16px;
+}
+
+/* OPTIONS */
+
+.option{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:8px 0;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.option input{
+  cursor:pointer;
+}
+
+/* SUBMIT */
+
+.submit-btn{
+  margin:35px auto;
+  display:block;
+  padding:12px 45px;
+  background:#2563eb;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.submit-btn:hover{
+  background:#1d4ed8;
+}
+
+/* RESULT MODAL */
+
+.result-overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.6);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  z-index:999;
+}
+
+.result-modal{
+  background:white;
+  padding:40px 60px;
+  border-radius:12px;
+  text-align:center;
+  animation:pop 0.3s ease;
+  max-width:400px;
+  width:100%;
+}
+
+.result-modal h2{
+  margin-bottom:10px;
+}
+
+.result-modal p{
+  color:#666;
+}
+
+.result-modal h1{
+  font-size:40px;
+  margin:10px 0 20px;
+  color:#2563eb;
+}
+
+.result-modal button{
+  padding:10px 30px;
+  border:none;
+  background:#16a34a;
+  color:white;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.result-modal button:hover{
+  background:#15803d;
+}
+
+@keyframes pop{
+  from{
+    transform:scale(0.7);
+    opacity:0;
+  }
+  to{
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+/* ---------------- */
+/* TABLET */
+/* ---------------- */
+
+@media (max-width:1024px){
+
+.exam-body{
+  padding:25px 40px;
+}
+
+}
+
+/* ---------------- */
+/* MOBILE */
+/* ---------------- */
+
+@media (max-width:768px){
+
+.exam-header{
+  padding:14px 10px;
+}
+
+.exam-header h2{
+  font-size:18px;
+}
+
+.exam-header p{
+  font-size:13px;
+}
+
+.exam-body{
+  padding:20px 15px;
+}
+
+.question-box{
+  padding:14px 15px;
+}
+
+.question-box h4{
+  font-size:15px;
+}
+
+.option{
+  font-size:14px;
+}
+
+.submit-btn{
+  width:100%;
+  padding:12px;
+}
+
+.result-modal{
+  padding:30px 20px;
+}
+
+.result-modal h1{
+  font-size:32px;
+}
+
+}
+
+/* ---------------- */
+/* SMALL MOBILE */
+/* ---------------- */
+
+@media (max-width:480px){
+
+.exam-header h2{
+  font-size:16px;
+}
+
+.question-box{
+  padding:12px;
+}
+
+.option{
+  gap:8px;
+}
+
+}

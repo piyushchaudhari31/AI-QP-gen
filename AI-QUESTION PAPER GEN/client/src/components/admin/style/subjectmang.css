@@ -1,0 +1,183 @@
+.subject-page {
+  padding: 30px;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.subject-page h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+.semester-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.sub-text {
+  color: #6b7280;
+  margin: 6px 0 30px;
+}
+
+/* GRID */
+.semester-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  
+}
+
+/* CARD */
+.semester-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 30px 20px;
+  margin-top: 20px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+}
+
+.add-semester-btn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.add-semester-btn:hover {
+  background: #4f46e5;
+}
+
+.semester-card h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.semester-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.available {
+  color: #059669;
+  font-weight: 500;
+}
+
+.not-found {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+
+.semester-card p {
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+/* HOVER */
+.semester-card:hover {
+  transform: translateY(-4px);
+  border-color: #c7d2fe;
+}
+
+/* ACTIVE */
+.semester-card.active {
+  border-color: #4f46e5;
+  background: #eef2ff;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add-semester-btn {
+  background: #6366f1;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add-semester-btn:hover {
+  background: #4f46e5;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: #1f2937;
+  width: 380px;
+  padding: 24px;
+  border-radius: 16px;
+  color: white;
+}
+
+.modal-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  background: #374151;
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.cancel-btn {
+  background: #374151;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+.create-btn {
+  background: #6366f1;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: white;
+}
+
+@media (max-width:768px){
+
+  .subject-page{
+    padding:20px;
+  }
+
+  .header-row{
+    flex-direction:column;
+    gap:14px;
+  }
+
+  .add-semester-btn{
+    width:100%;
+    text-align:center;
+  }
+
+  .semester-grid{
+    grid-template-columns:1fr;
+  }
+
+}

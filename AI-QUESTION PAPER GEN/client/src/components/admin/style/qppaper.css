@@ -1,0 +1,109 @@
+/* PAGE */
+
+.dashboard {
+  width: 100%;
+  padding: 30px;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.dashboard h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.welcome {
+  color: #6b7280;
+  margin-bottom: 22px;
+}
+
+/* TABLE CONTAINER */
+
+.table-box {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+
+/* TABLE */
+
+.table-box table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+/* HEADER */
+
+.table-box thead {
+  background: #f8fafc;
+}
+
+.table-box th {
+  text-align: left;
+  padding: 14px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #6b7280;
+}
+
+/* BODY */
+
+.table-box td {
+  padding: 16px 14px;
+  font-size: 14px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.table-box tbody tr {
+  transition: 0.2s;
+}
+
+.table-box tbody tr:hover {
+  background: #f9fafb;
+}
+
+/* FIRST COLUMN STYLE */
+
+.table-box td:first-child {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* EMPTY ROW */
+
+.table-box td[colspan] {
+  padding: 30px;
+  color: #6b7280;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 20px 0px;
+  }
+
+  .dashboard h1 {
+    font-size: 22px;
+  }
+  .table-box {
+    margin: 0 -20px; 
+  }
+
+  .table-box table {
+    min-width: 650px;
+  }
+
+  .table-box th,
+  .table-box td {
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  .table-box {
+    height: 70vh;
+  }
+}

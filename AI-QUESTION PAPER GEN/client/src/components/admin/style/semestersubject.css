@@ -1,0 +1,440 @@
+/* ================= GLOBAL ================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+/* ================= PAGE ================= */
+
+.semester-subject-page {
+  padding: 32px 36px;
+  min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+
+.subject-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.subject-top h1 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* ================= HEADER ACTION ================= */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  width: 250px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+.add-subject-btn {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.add-subject-btn:hover {
+  background: #4f46e5;
+}
+
+/* ================= SUBJECT LIST ================= */
+
+.subject-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* ================= SUBJECT CARD ================= */
+
+.subject-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+/* ================= SUBJECT HEADER ================= */
+
+.subject-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.subject-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.code {
+  display: block;
+  font-size: 13px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* ================= SUBJECT ACTION ================= */
+
+.subject-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.add-unit-btn {
+  background: #111827;
+  color: #fff;
+  border: none;
+  padding: 9px 14px;
+  border-radius: 9px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.edit-icon {
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: #ef4444;
+  cursor: pointer;
+}
+
+/* ================= UNIT BOX ================= */
+
+.unit-box {
+  margin-top: 18px;
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 14px 16px;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.unit-box::-webkit-scrollbar {
+  display: none;
+}
+
+/* ================= UNIT BLOCK ================= */
+
+.unit-block {
+  margin-top: 12px;
+}
+
+.unit-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f4f6;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* ================= TOPIC CHIPS ================= */
+
+.topic-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  max-height: 90px;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.topic-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  font-size: 13px;
+  width: fit-content;
+}
+
+.topic-text {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+.topic-edit-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-left: 4px;
+}
+
+.topic-edit-icon {
+  opacity: 0;
+  transition: 0.2s;
+  cursor: pointer;
+  color: #4f46e5;
+}
+
+.topic-chip:hover .topic-edit-icon {
+  opacity: 1;
+}
+
+.topic-chip:hover {
+  background: #d1d5db;
+}
+
+.topic-chips::-webkit-scrollbar {
+  width: 6px;
+}
+
+.topic-chips::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 10px;
+}
+
+/* ================= MODAL ================= */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: #1f2937;
+  width: 360px;
+  padding: 26px;
+  border-radius: 14px;
+  color: #fff;
+}
+
+.modal-box h2 {
+  margin-bottom: 18px;
+}
+
+.modal-box input,
+.faculty-select {
+  width: 100%;
+  padding: 11px;
+  border-radius: 8px;
+  border: none;
+  background: #374151;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+/* ================= TOPIC ROW ================= */
+
+.topic-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.topic-row input {
+  flex: 1;
+}
+
+.remove-topic-btn {
+  width: 34px;
+  height: 34px;
+  background: #ef4444;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.remove-topic-btn:hover {
+  background: #dc2626;
+}
+
+/* ================= ADD TOPIC ================= */
+
+.Topic {
+  background: transparent;
+  border: 1px dashed #6b7280;
+  color: #d1d5db;
+  padding: 8px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 6px;
+}
+.topic-delete-icon {
+  margin-left: 4px;
+  cursor: pointer;
+  color: #ef4444;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.topic-chip:hover .topic-delete-icon {
+  opacity: 1;
+}
+
+/* ================= MODAL ACTION ================= */
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.cancel-btns {
+  background: #374151;
+  border: none;
+  padding: 9px 20px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.create-btn {
+  background: #6366f1;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.create-btn:disabled {
+  opacity: 0.6;
+}
+
+.delete-btn {
+  background: #ef4444;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+
+  .semester-subject-page{
+    padding:18px 16px;
+  }
+
+  /* HEADER STACK */
+  .subject-top{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:14px;
+  }
+
+  .header-actions{
+    width:100%;
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .search-box{
+    width:100%;
+  }
+
+  .add-subject-btn{
+    width:100%;
+    justify-content:center;
+  }
+
+  /* SUBJECT CARD */
+  .subject-card{
+    padding:18px;
+    border-radius:12px;
+  }
+
+  /* HEADER INSIDE CARD */
+  .subject-header{
+    flex-direction:column;
+    gap:14px;
+  }
+
+  /* SUBJECT ACTION BUTTONS */
+  .subject-actions{
+    width:100%;
+    justify-content:space-between;
+  }
+
+  .add-unit-btn{
+    flex:1;
+    text-align:center;
+  }
+
+  /* UNIT BOX */
+ .unit-box{
+    padding:12px;
+  }
+
+  .unit-title{
+    font-size:13px;
+    padding:10px 12px;
+  }
+
+  .topic-chip{
+    font-size:12px;
+    padding:5px 8px;
+  }
+  /* UNIT TITLE */
+  .unit-title{
+    font-size:13px;
+    padding:10px;
+  }
+
+  /* TOPIC CHIPS */
+  .topic-chips{
+    max-height:none;
+  }
+
+  .topic-chip{
+    font-size:12px;
+  }
+
+}

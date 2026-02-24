@@ -1,0 +1,11 @@
+.student-layout {
+  display: flex;
+}
+
+.student-content {
+  margin-left: 250px;
+  width: 100%;
+  
+  background: #f9fafb;
+  min-height: 100vh;
+}

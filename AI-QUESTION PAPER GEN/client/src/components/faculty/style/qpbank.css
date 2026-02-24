@@ -1,0 +1,55 @@
+.qb-container {
+  padding: 30px;
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+.qb-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.qb-subtitle {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.qb-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.qb-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 25px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.25s ease;
+}
+
+.qb-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.qb-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.qb-card.active:hover {
+  transform: translateY(-6px);
+}
+
+/* Inactive */
+.qb-card.inactive {
+  opacity: 0.6;
+}
+
+.qb-card.inactive:hover {
+  transform: translateY(-3px);
+}

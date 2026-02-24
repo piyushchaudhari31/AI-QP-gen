@@ -1,0 +1,182 @@
+.testimonials-section {
+  padding: 120px 150px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #1f2937;
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #6b7280;
+}
+
+/* Grid */
+.testimonials-grid {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* Card */
+.testimonial-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  text-align: left;
+
+  border: 1px solid #eaeaea;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* Stars */
+.stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+/* Quote */
+.quote {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #374151;
+  margin-bottom: 24px;
+}
+
+/* User */
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;        /* IMPORTANT */
+  flex-shrink: 0;
+}
+
+/* Image zoom */
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom on card hover */
+.testimonial-card:hover .avatar img {
+  transform: scale(1.15);
+}
+
+.user h4 {
+  font-size: 15px;
+  margin: 0;
+  color: #111827;
+}
+
+.user span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Responsive */
+
+  .testimonials-section h2 {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .testimonial-card {
+    padding: 24px;
+  }
+
+  .quote {
+    font-size: 14px;
+  }
+
+
+/* =========================
+   Mobile – 600px
+========================= */
+@media (max-width: 600px) {
+  .testimonials-section {
+    padding: 60px 20px;
+  }
+
+  .testimonials-section h2 {
+    font-size: 28px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    padding: 20px;
+  }
+
+  .quote {
+    font-size: 13px;
+  }
+
+  .user h4 {
+    font-size: 14px;
+  }
+
+  .user span {
+    font-size: 12px;
+  }
+}
+
+/* =========================
+   Small phones – 400px
+========================= */
+@media (max-width: 400px) {
+  .testimonials-section {
+    padding: 40px 12px;
+  }
+
+  .testimonials-section h2 {
+    font-size: 24px;
+  }
+
+  .quote {
+    font-size: 12px;
+  }
+
+  .testimonial-card {
+    padding: 16px;
+  }
+
+  .avatar {
+    width: 36px;
+    height: 36px;
+  }
+
+  .user h4 {
+    font-size: 13px;
+  }
+
+  .user span {
+    font-size: 11px;
+  }
+}

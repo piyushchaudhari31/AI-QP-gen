@@ -1,0 +1,116 @@
+.features-section {
+  padding: 40px 160px;
+  background: transparent;
+}
+
+.features-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 28px;
+}
+
+.feature-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 32px 26px;
+
+  color: #111;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.feature-card svg {
+  color: #2563eb;
+  margin-bottom: 18px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.feature-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6b7280;
+}
+
+@media (max-width: 900px) {
+  .features-section {
+    padding: 40px 60px;
+  }
+
+  .features-row {
+    grid-template-columns: 1fr; 
+    gap: 24px;
+  }
+
+  .feature-card {
+    padding: 28px 22px;
+  }
+
+  .feature-card h3 {
+    font-size: 16px;
+  }
+
+  .feature-card p {
+    font-size: 13px;
+  }
+}
+
+/* =========================
+   Mobile – 600px
+========================= */
+@media (max-width: 600px) {
+  .features-section {
+    padding: 30px 20px;
+  }
+
+  .feature-card {
+    padding: 24px 16px;
+  }
+
+  .feature-card h3 {
+    font-size: 15px;
+  }
+
+  .feature-card p {
+    font-size: 12px;
+  }
+
+  .feature-card svg {
+    width: 28px;
+    height: 28px;
+    margin-bottom: 14px;
+  }
+}
+
+/* =========================
+   Small phones – 400px
+========================= */
+@media (max-width: 400px) {
+  .features-section {
+    padding: 20px 12px;
+  }
+
+  .feature-card {
+    padding: 20px 12px;
+  }
+
+  .feature-card h3 {
+    font-size: 14px;
+  }
+
+  .feature-card p {
+    font-size: 11px;
+  }
+}

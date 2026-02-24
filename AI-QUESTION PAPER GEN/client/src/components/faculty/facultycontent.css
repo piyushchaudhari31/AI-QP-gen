@@ -1,0 +1,38 @@
+.faculty-layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.faculty-content {
+  flex: 1;
+  overflow-y: auto;
+  background: #f9fafb;
+}
+
+/* MOBILE HEADER */
+
+.mobile-header{
+  display:none;
+  align-items:center;
+  gap:15px;
+  padding:16px;
+  background:white;
+  border-bottom:1px solid #eee;
+}
+
+.mobile-header button{
+  border:none;
+  background:none;
+  cursor:pointer;
+}
+
+/* MOBILE */
+
+@media (max-width:900px){
+
+.mobile-header{
+  display:flex;
+}
+
+}

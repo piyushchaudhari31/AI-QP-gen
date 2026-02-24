@@ -1,0 +1,267 @@
+.generate-wrapper {
+  min-height: 100vh;
+  background: #f4f6fa;
+  padding: 30px 60px;
+  font-family: "Segoe UI", sans-serif;
+}
+.marks-info {
+  background: rgba(255,255,255,0.08);
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+  opacity: 0.4;
+}
+
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #222;
+}
+
+.top-header p {
+  margin-top: 5px;
+  color: #666;
+}
+
+/* USER ICON */
+.user-avatar {
+  width: 45px;
+  height: 45px;
+  background: #2c3e50;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+/* CARD */
+.main-card {
+  margin: 70px auto;
+  max-width: 850px;
+  background: white;
+  padding: 60px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+/* ICON */
+.icon-circle {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  border-radius: 50%;
+  background: #e9edf5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+/* TEXT */
+.main-card h2 {
+  margin-top: 20px;
+  font-size: 26px;
+  color: #222;
+}
+
+.main-card p {
+  color: #777;
+  margin: 15px 0 30px;
+}
+
+/* BUTTON */
+.generate-btn {
+  padding: 14px 50px;
+  background: #2c3e50;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.generate-btn:hover {
+  background: #1a252f;
+}
+/* ===== MODAL OVERLAY ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 10, 25, 0.85);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  z-index: 1000;
+}
+
+.modal-box {
+  width: 40vw !important;      /* viewport width se lega */
+  max-width: 1100px;
+  padding: 50px 60px;
+  border-radius: 18px;
+  
+  background: linear-gradient(180deg,#1f2b3f,#18263a);
+  color: white;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.7);
+}
+
+
+/* TITLE */
+.modal-box h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* INPUTS */
+.modal-box input,
+.modal-box select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #32445f;
+  color: white;
+  margin-top: 5px;
+}
+
+.form-top {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-top div {
+  flex: 1;
+}
+
+.difficulty-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.difficulty-row div {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* OPTIONS BOX */
+.options-box {
+  background: rgba(255,255,255,0.06);
+  padding: 20px 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+/* FIX CHECKBOX ALIGNMENT */
+.options-box label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  cursor: pointer;
+}
+/* ===== FIX JUMPING INPUT BOXES ===== */
+
+.difficulty-row {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.difficulty-row div {
+  min-height: 90px;      /* SAME HEIGHT */
+}
+
+.difficulty-row label {
+  min-height: 38px;     /* SAME LABEL HEIGHT */
+  display: flex;
+  align-items: flex-end;
+}
+
+
+/* Checkbox size */
+.options-box input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #4a7cf3;
+  cursor: pointer;
+}
+
+/* Button row */
+.btn-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Cancel button */
+.cancel-btn {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #3b4c67;
+  color: white;
+  font-weight: 500;
+}
+
+/* Generate button */
+.generate-btn2 {
+  
+  padding: 12px;
+  width: 200px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg,#4a7cf3,#8f3de8);
+  color: white;
+  font-weight: 600;
+}
+
+/* Chrome, Edge, Safari */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Spinner ring */
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+  animation: spin 0.8s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

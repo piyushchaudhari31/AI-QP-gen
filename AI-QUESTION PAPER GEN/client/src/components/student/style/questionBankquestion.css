@@ -1,0 +1,164 @@
+/* CONTAINER */
+
+.qb-container {
+  padding: 40px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+/* GRID */
+
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 30px;
+}
+
+/* CARD */
+
+.subject-card {
+  background: white;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  transition: .3s;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 420px;
+  overflow: hidden;
+}
+
+/* HEADER */
+
+.subject-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.subject-header h2 {
+  margin: 0;
+}
+
+.subject-header span {
+  color: gray;
+  font-size: 14px;
+}
+
+/* DOWNLOAD BUTTON */
+
+.download-btn {
+  background: #6366f1;
+  border: none;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* UNIT SCROLL AREA */
+
+.unit-scroll {
+  margin-top: 15px;
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 6px;
+}
+
+/* SCROLLBAR */
+
+.unit-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.unit-scroll::-webkit-scrollbar-thumb {
+  background: #c7c9ff;
+  border-radius: 10px;
+}
+
+/* UNIT BAR */
+
+.unit-bar {
+  background: #f1f3f5;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* QUESTIONS */
+
+.question-box {
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+.question-box p {
+  margin: 6px 0;
+}
+
+/* EMPTY */
+
+.no-data {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  padding: 40px;
+}
+
+/* -------------------- */
+/* MOBILE (900px) */
+/* -------------------- */
+
+@media (max-width: 900px) {
+
+  .qb-container {
+    padding: 18px;
+  }
+
+  .subject-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .subject-card {
+    height:auto;
+    padding: 18px;
+  }
+
+  .subject-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .download-btn {
+    width: 120px;
+  }
+
+  .unit-bar {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .question-box {
+    padding: 12px;
+  }
+
+  .unit-scroll {
+    max-height: 250px;
+  }
+
+  .unit-scroll::-webkit-scrollbar {
+    display: none;
+  }
+
+}

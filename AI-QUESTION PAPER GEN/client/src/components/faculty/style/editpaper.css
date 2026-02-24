@@ -1,0 +1,41 @@
+.edit-paper {
+  padding: 30px;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.editor-box {
+  margin-bottom: 25px;
+}
+
+.q-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.quill-editor {
+  background: #fff;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.save-btn {
+  background: #4f46e5;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background: #e5e7eb;
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
