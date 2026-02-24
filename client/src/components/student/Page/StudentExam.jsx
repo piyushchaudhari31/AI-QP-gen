@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import "../style/studentExam.css";
+import "../style/studentexam.css";
 import axios from "axios";
 import { authcontext } from "../../../context/Authcontext";
 import { useForm } from "react-hook-form";
