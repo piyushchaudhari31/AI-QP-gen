@@ -5,7 +5,7 @@ export const authcontext =  createContext(null);
 
 const Authcontext = (props) => {
 
-  const url = "http://localhost:3000"
+  const url = "https://ai-qp-gen-backend.onrender.com"
 
   const module = {
     url
