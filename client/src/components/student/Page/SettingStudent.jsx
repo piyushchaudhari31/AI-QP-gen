@@ -37,7 +37,7 @@ const SettingStudent = () => {
 
     localStorage.setItem("user", JSON.stringify(res.data.updatedUser));
     toast.success("Profile image updated", { id: toastId });
-    navigate('/faculty/dashboard')
+    navigate('/student/dashboard')
   } catch {
     toast.error("Image update failed", { id: toastId });
   }
@@ -56,7 +56,7 @@ const SettingStudent = () => {
 
     localStorage.setItem("user", JSON.stringify(res.data.updatedUser));
     toast.success("Name updated", { id: toastId });
-    navigate('/faculty/dashboard')
+    navigate('/student/dashboard')
   } catch {
     toast.error("Failed to update name", { id: toastId });
   }
@@ -75,7 +75,7 @@ const SettingStudent = () => {
 
     localStorage.setItem("user", JSON.stringify(res.data.updatedUser));
     toast.success("Email updated", { id: toastId });
-    navigate('/faculty/dashboard')
+    navigate('/student/dashboard')
     
   } catch {
     toast.error("Failed to update email", { id: toastId });
